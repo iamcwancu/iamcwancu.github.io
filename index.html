@@ -32,6 +32,26 @@
             -moz-osx-font-smoothing: grayscale;
         }
 
+        .spacing-xs {
+            height: 8px;
+        }
+
+        .spacing-sm {
+            height: 16px;
+        }
+
+        .spacing-md {
+            height: 24px;
+        }
+
+        .spacing-lg {
+            height: 32px;
+        }
+
+        .spacing-xl {
+            height: 48px;
+        }
+
         body {
             background-color: var(--light-background);
             color: var(--text-dark);
@@ -78,19 +98,22 @@
             margin-bottom: 48px;
         }
 
+
         .profile-picture {
             width: 160px;
-            height: 160px;
+            height: 160;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 28px;
-            font-size: 64px;
-            color: white;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            border: 4px solid rgba(255, 255, 255, 0.1);
+            border: 2px solid #e0e0e0;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         h1 {
@@ -155,6 +178,11 @@
         }
 
         /* Section Styles */
+
+        .about {
+            padding: 80px 0;
+        }
+
         section {
             padding: 100px 0;
         }
@@ -744,7 +772,9 @@
     <header>
         <div class="container">
             <div class="profile">
-                <div class="profile-picture">SV</div>
+                <div class="profile-picture">
+                    <img src="https://avatars.githubusercontent.com/u/41211881?v=4" alt="Profile Picture" />
+                </div>
                 <h1>Shivanshu Verma</h1>
                 <p class="title">iOS Developer</p>
                 <div class="contact-info">
@@ -802,39 +832,48 @@
         </div>
     </section>
 
+
+
     <!-- Skills Section -->
     <section class="skills">
         <div class="container">
             <h2 class="section-title">My Skills</h2>
             <div class="skills-container">
                 <div class="skill-category">
-                    <h3 class="category-title">Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Swift</span>
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">Java</span>
-                    </div>
-                </div>
-                <div class="skill-category">
                     <h3 class="category-title">iOS Development</h3>
                     <div class="skill-tags">
+                        <span class="skill-tag">Swift</span>
                         <span class="skill-tag">UIKit</span>
                         <span class="skill-tag">SwiftUI</span>
                         <span class="skill-tag">CoreData</span>
                         <span class="skill-tag">MVVM</span>
+                        <span class="skill-tag">MVC</span>
                         <span class="skill-tag">Maps</span>
+                        <span class="skill-tag">URLSession</span>
                         <span class="skill-tag">Networking</span>
-                        <span class="skill-tag">QR/Barcode Scanning</span>
+                        <span class="skill-tag">Push Notification</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Cross-Platform</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Dart</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">GetX</span>
+                        <span class="skill-tag">BLoC</span>
+                        <span class="skill-tag">Git_it</span>
+                        <span class="skill-tag">VIPER</span>
                     </div>
                 </div>
                 <div class="skill-category">
                     <h3 class="category-title">Tools & Technologies</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Xcode</span>
+                        <span class="skill-tag">Instruments</span>
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Flutter</span>
                         <span class="skill-tag">SourceTree</span>
                         <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">Flutter</span>
                         <span class="skill-tag">MySQL</span>
                         <span class="skill-tag">SQLite</span>
                         <span class="skill-tag">JSON</span>
@@ -843,11 +882,11 @@
                 <div class="skill-category">
                     <h3 class="category-title">Soft Skills</h3>
                     <div class="skill-tags">
+                        <span class="skill-tag">Team Collaboration</span>
+                        <span class="skill-tag">Communication</span>
                         <span class="skill-tag">Problem Solving</span>
                         <span class="skill-tag">Debugging</span>
                         <span class="skill-tag">Code Review</span>
-                        <span class="skill-tag">Team Collaboration</span>
-                        <span class="skill-tag">Communication</span>
                     </div>
                 </div>
             </div>
